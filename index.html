@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seatwork 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; }
+
+        body { 
+            margin: 0; 
+            font-family: Arial, sans-serif; 
+            background-image: url('https://googleusercontent.com'); 
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: #000000; 
+        }
+    
+        nav h2 { margin: 0; color: #ffffff; }
+        nav a { color: white; text-decoration: none; }
+    
+        .main-wrapper {
+            background: rgba(255, 255, 255, 0.88);
+            padding: 40px 25px;
+            border-radius: 20px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            border: 1px solid #000000;
+        }
+
+        .heading { margin-bottom: 35px; text-align: center; }
+        .heading h1 { font-size: 38px; font-weight: bold; margin-bottom: 8px; color: #000000; }
+        .heading p { color: #333333; font-size: 16px; }
+        .content { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; align-items: start; }
+
+        .schedule { background: #ffffff; padding: 25px; border-radius: 15px; border: 2px solid #000000; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .schedule h2 { margin-top: 0; font-weight: bold; color: #000000; }
+        table { width: 100%; border-collapse: collapse; }
+        th { background: #000000; color: white; padding: 13px 8px; text-align: left; }
+        td { padding: 15px 8px; border-bottom: 1px solid #000000; font-size: 14px; color: #000000; }
+        tr:hover td { background: #f5f5f5; }
+        
+        .contact { background: #ffffff; padding: 25px; border-radius: 15px; border: 2px solid #000000; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .contact h2 { margin-top: 0; font-weight: bold; color: #000000; }
+        label { display: block; margin: 15px 0 7px; font-weight: bold; font-size: 14px; color: #000000; }
+        input, textarea { width: 100%; padding: 12px; border: 1px solid #000000; border-radius: 7px; font-size: 14px; font-family: inherit; background-color: #ffffff; color: #000000; }
+        input:focus, textarea:focus { outline: 2px solid #000000; border-color: #000000; }
+        textarea { height: 120px; resize: vertical; }
+        
+        button.btn-submit { width: 100%; margin-top: 18px; padding: 13px; background: #000000; color: white; border: none; border-radius: 7px; cursor: pointer; font-size: 15px; font-weight: bold; }
+        button.btn-submit:hover { background: #222222; }
+
+    
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnWHJT7Dj_pCvneMp-L1rmmHbPixBNPz-Ig7AswGn7G4LPu3xqQE6okPg&s=10" alt="O.B. Montessori Fairview" class="rounded-circle" style="height: 60px; width:60px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Search">
+                    <button class="btn btn-primary" type="button">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav> 
+    <div class="container">
+        <div class="main-wrapper shadow-lg">
+        
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="p-4 border rounded bg-white border-dark">
+                        <p class="m-0 text-dark">
+                            O.B. Montessori School uses “Seipsum facit persona” is a Latin phrase that translates to “Man makes himself” the phrase means "Man Makes Himself". The school uses this doctrine to emphasize its core mission: transforming students into independent, self-disciplined, and self-developing individuals who take active responsibility for constructing their own character and future.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="heading">
+                <h1>Welcome to O.B. Montessori!</h1>
+                <p>Check our office hours or send us a message.</p>
+            </div>
+
+
+            <div class="content">
+    
+                <section class="schedule">
+                    <h2>Office Schedule</h2>
+                    <table>
+                        <tr>
+                            <th>Day</th>
+                            <th>Time</th>
+                            <th>Department</th>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>8 AM - 4 PM</td>
+                            <td>Registrar</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>8 AM - 4 PM</td>
+                            <td>Accounting</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>8 AM - 4 PM</td>
+                            <td>Guidance</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>8 AM - 4 PM</td>
+                            <td>Principal</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>8 AM - 3 PM</td>
+                            <td>Admin</td>
+                        </tr>
+                    </table>
+                </section>
+
+        
+                <section class="contact" id="contact">
+                    <h2>Contact Us</h2>
+                    <form id="contactForm">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Enter your full name" required>
+
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="Enter your subject" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Write your message here..." required></textarea>
+
+                        <div class="form-check form-switch mt-3">
+                            <input type="checkbox" class="form-check-input" id="checkboxUpdates">
+                            <label class="form-check-label" for="checkboxUpdates">I agree to receive updates.</label>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
+                </section>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://jsdelivr.net"></script>
+</body>
+</html>
